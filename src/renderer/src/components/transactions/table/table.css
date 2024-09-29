@@ -1,0 +1,105 @@
+/* TransactionTable Styles */
+.transaction-table {
+    width: 100%;
+    height: 100%; /* Set table height to 100% */
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    table-layout: fixed; /* Ensure table layout is fixed */
+    transition: all 0.3s ease; /* Add smooth transition */
+    margin-left: 10px;
+}
+
+.transaction-table th,
+.transaction-table td {
+    border: none; /* Remove border */
+    padding: 12px; /* Increase padding for better spacing */
+    text-align: left; /* Align text to the left */
+    overflow: hidden; /* Ensure content is clipped */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowed content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    color: white; /* Change text color to black */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-table tr {
+    background-color: transparent; /* Row background color */
+    color: white; /* Row text color */
+    display: flex; /* Use flexbox for rows */
+    align-items: center; /* Center items vertically */
+    transition: all 0.3s ease; /* Add smooth transition */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.transaction-table tr:hover {
+    /* Hover effect for rows */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add a glow effect */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-table td {
+    background-color: transparent; /* Cell background color */
+    color: #000; /* Cell text color */
+    margin-bottom: 0; /* Remove space between cells */
+    display: flex; /* Use flexbox to align items on the same line */
+    justify-content: space-between; /* Space out transaction details */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-details {
+    flex: 7; /* Further increased space for details */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-date-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align date and time to the start */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-date-time-formatted {
+    font-size: 13px; /* Slightly smaller font size for date and time */
+    color: white; /* Color for date and time */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-address {
+    font-size: 12px; /* Smaller font size for address */
+    color: wheat; /* Lighter color for address */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-icon {
+    flex: 0 0 auto; /* Adjust flex to auto width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-asset-amount {
+    flex: 3; /* Take up more space for asset name and amount */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; /* Align to the right */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-asset-name {
+    font-size: 14px; /* Font size for asset name */
+    color: white; /* Color for asset name */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.transaction-amount {
+    font-size: 12px; /* Font size for amount */
+    color: #f00; /* Red color for negative amounts */
+    transition: all 0.3s ease; /* Add smooth transition */
+}

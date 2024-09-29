@@ -1,0 +1,30 @@
+.tables-container{
+    display: flex;
+    padding: 0px;
+    background-color: transparent;
+    overflow-y: auto;
+    height: 100%; /* Make the container take up the full height */
+}
+
+.asset-table-container, .transaction-table-container {
+  display: flex;
+    margin-top: 0px;
+  padding: 0px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+/* AssetTable Styles */
+.asset-table-container {
+    overflow-y: auto; /* Enable vertical scrolling */
+    /* disable scrollbar */
+    scrollbar-width: none;
+    flex-grow: 1;
+}
+
+.transaction-table-container {
+    overflow-y: auto; /* Enable vertical scrolling */
+    /* disable scrollbar */
+    scrollbar-width: none;
+    flex-grow: 1;
+}

@@ -1,0 +1,7 @@
+.valid-mnemonic {
+color: #4caf50; /* Green color for valid mnemonic */
+}
+
+.invalid-mnemonic {
+color: #f44336; /* Red color for invalid mnemonic */
+}

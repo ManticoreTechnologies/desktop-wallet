@@ -1,0 +1,46 @@
+:root{
+  --sidebar-min-width: 50px;
+  --sidebar-max-width: 250px;
+}
+
+/* Set html page to black */
+html,
+html::before{
+  background-color: black;
+}
+
+/* We need to set the height of the html, body and #root to 100% */
+html, body, #root{ 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Then we need to set the margin of the body to 0 and the padding to the sidebar width */
+body { 
+  margin: 0 0 0 0 ;
+  padding-left: var(--sidebar-min-width); 
+}
+
+/* Set the background color of the root to transparent */
+#root{ background-color: transparent }
+
+body::before {
+  
+  /* Background Image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; 
+  opacity: 0.1; 
+  color: black;
+  content: " ";
+  height: 100vh;
+  position: absolute;
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-image: url('./manticore.png');
+  background-color: black;
+
+}

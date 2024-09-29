@@ -1,0 +1,72 @@
+.asset-table {
+  width: 100%;
+  height: 100%; /* Set table height to 100% */
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  table-layout: fixed; /* Ensure table layout is fixed */
+  transition: all 0.3s ease; /* Add smooth transition */
+  margin-left: 10px;
+}
+
+.asset-table th,
+.asset-table td {
+  border: none; /* Remove border */
+  padding: 12px; /* Increase padding for better spacing */
+  text-align: left; /* Align text to the left */
+  overflow: hidden; /* Ensure content is clipped */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflowed content */
+  white-space: nowrap; /* Prevent text from wrapping */
+  color: white; /* Change text color to white */
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.asset-table th {
+  background-color: #000; /* Header background color */
+  color: #fff; /* Header text color */
+  font-weight: bold; /* Make header text bold */
+}
+
+.asset-table tr {
+  background-color: transparent; /* Row background color */
+  color: white; /* Row text color */
+  display: flex; /* Use flexbox for rows */
+  align-items: center; /* Center items vertically */
+  transition: all 0.3s ease; /* Add smooth transition */
+  margin-left: 10px;
+  margin-right: 20px;
+  height: 100%; /* Set row height to 100% */
+}
+
+.asset-table tr:hover {
+  /* Hover effect for rows */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add a glow effect */
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.asset-table td {
+  background-color: transparent; /* Cell background color */
+  color: #fff; /* Cell text color */
+  margin-bottom: 0; /* Remove space between cells */
+  width: 100%; /* Ensure each cell takes up full width */
+  display: flex; /* Use flexbox to align items on the same line */
+  justify-content: space-between; /* Space out asset name and balance */
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.asset-table td:first-child {
+  text-align: left; /* Align text to the left */
+}
+
+.asset-table td:last-child {
+  text-align: right; /* Align text to the right */
+}
+
+/* New styles for asset name and balance */
+.asset-name {
+  text-align: left; /* Align asset name to the left */
+}
+
+.asset-balance {
+  text-align: right; /* Align asset balance to the right */
+}

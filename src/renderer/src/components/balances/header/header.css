@@ -1,0 +1,28 @@
+.balance-summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.balance-summary .balance, 
+.balance-summary .usd-value, 
+.balance-summary .btc-value {
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+.balance-item {
+    display: flex;
+    flex-direction: column; /* Stack label and value vertically */
+    align-items: center; /* Center align the items */
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+}
